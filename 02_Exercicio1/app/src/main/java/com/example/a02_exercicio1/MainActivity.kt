@@ -14,10 +14,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonConverter.setOnClickListener {
-            var euros: Double = binding.editEuros.toString().toDouble()
-            var dolares: Double = euros*1.09
-
-            binding.textDolares.text = dolares.toString()
+            val euros: Double = binding.editValoresEuros.text.toString().toDouble()
+            val dolares: Double = euros*1.09
+            binding.textValorDolares.text =  dolares.toString()
         }
 
     }

@@ -2,48 +2,44 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/edit_euros"
+    android:id="@+id/edit_Euros"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/button_converter"
-        app:layout_constraintStart_toStartOf="@+id/button_converter" />
-
-    <TextView
-        android:id="@+id/text_euros"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="20dp"
-        android:text="Introduza o valor em euros:"
-        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal"
-        app:layout_constraintStart_toStartOf="@+id/editTextNumberDecimal" />
 
     <Button
         android:id="@+id/button_converter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="318dp"
-        android:text="Converter euros em dólares"
+        android:layout_marginBottom="31dp"
+        android:text="Converter Euros em Dólares"
+        app:layout_constraintBottom_toTopOf="@+id/text_valorDolares"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_valoresEuros" />
+
+    <EditText
+        android:id="@+id/edit_valoresEuros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="279dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Insira o valor em Euros"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button_converter"
+        app:layout_constraintStart_toStartOf="@+id/button_converter"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_dolares"
-        android:layout_width="147dp"
-        android:layout_height="82dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="32dp"
+        android:id="@+id/text_valorDolares"
+        android:layout_width="205dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="410dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/button_converter"
         app:layout_constraintTop_toBottomOf="@+id/button_converter" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
