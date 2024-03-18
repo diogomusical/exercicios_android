@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Impar / Par \n Primo / Não Primo"
+        android:textSize="32sp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_numero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Introduza um número inteiro"
+        android:gravity="center"
+        android:layout_margin="5dp"
+        />
+
+    <Button
+        android:id="@+id/button_verificador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Verificar"
+        android:layout_marginBottom="32sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_valor_par_impar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="23sp"
+        android:text="Exemplo1"
+        android:layout_marginBottom="32sp"/>
+
+    <TextView
+        android:id="@+id/text_valor_primo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Exemplo2"
+        android:textSize="23sp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
