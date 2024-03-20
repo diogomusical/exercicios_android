@@ -31,6 +31,9 @@ class LoginActivity : AppCompatActivity() {
                 startActivity(i)
             } else {
                 Toast.makeText(applicationContext, "Password Errada", Toast.LENGTH_SHORT).show()
+                binding.editPassword.text = null
+                binding.editUsername.text = null
+
             }
 
         }

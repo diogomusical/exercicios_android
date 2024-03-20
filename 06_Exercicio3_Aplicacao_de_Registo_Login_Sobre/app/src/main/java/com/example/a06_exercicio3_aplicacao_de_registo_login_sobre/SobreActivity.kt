@@ -12,5 +12,6 @@ class SobreActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySobreBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
     }
 }
