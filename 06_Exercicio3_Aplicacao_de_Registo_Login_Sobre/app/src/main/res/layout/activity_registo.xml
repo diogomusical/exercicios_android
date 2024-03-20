@@ -26,7 +26,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:inputType="textPassword"/>
 
     <Button
         android:id="@+id/button_registo"
