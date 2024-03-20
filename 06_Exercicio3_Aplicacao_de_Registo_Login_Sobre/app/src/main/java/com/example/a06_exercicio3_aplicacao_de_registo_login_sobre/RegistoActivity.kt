@@ -13,5 +13,16 @@ class RegistoActivity : AppCompatActivity() {
         binding = ActivityRegistoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val i = intent
+
+        binding.editUsername.setText(i.getStringExtra("username"))
+        binding.editPassword.setText(i.getStringExtra("password"))
+
+        binding.buttonRegisto.setOnClickListener {
+            i.putExtra("username", binding.editUsername.text.toString())
+            i.putExtra("password", binding.editPassword.text.toString())
+            setResult(1,i)
+            finish()
+        }
     }
 }

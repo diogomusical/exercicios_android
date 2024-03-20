@@ -6,9 +6,35 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registo"/>
+        android:gravity="center"
+        android:textSize="23sp"
+        android:text="Registo"
+        android:layout_marginBottom="23dp"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_registo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registo"
+        android:layout_margin="24dp"/>
+
 
 
 
