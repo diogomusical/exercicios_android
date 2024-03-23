@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
             val i: Intent = Intent(this, SplashScreenPedidoActivity::class.java)
             i.putExtra("entradas",entradas)
             i.putExtra("prato_carne", prato_carne)
+            i.putExtra("prato_peixe", prato_peixe)
             i.putExtra("prato_vegetariano", prato_vegetariano)
             i.putExtra("vinho", vinho)
             i.putExtra("refrigerante", refrigerante)
