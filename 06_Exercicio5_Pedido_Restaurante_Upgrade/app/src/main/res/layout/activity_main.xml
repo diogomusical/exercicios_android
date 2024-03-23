@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pedido"
+        android:textSize="32sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nome de Restaurante"
+        android:textSize="23sp"/>
+    
+    <CheckBox
+        android:id="@+id/checkbox_entradas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Entradas"/>
+    
+    <CheckBox
+        android:id="@+id/checkbox_prato_carne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prato de carne"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_prato_peixe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prato de peixe"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_prato_vegetariano"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prato vegetariano"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_vinho"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vinho"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_refrigerante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Refrigerante"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_agua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Água"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_sobremesa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sobremesa"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Café"/>
+    
+    <Button
+        android:id="@+id/button_pedido"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Efectuar Pedido"
+        />
+    
+
+</LinearLayout>
