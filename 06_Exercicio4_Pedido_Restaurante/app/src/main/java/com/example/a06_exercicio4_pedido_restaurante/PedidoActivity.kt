@@ -24,5 +24,18 @@ class PedidoActivity : AppCompatActivity() {
         val agua = i.extras?.getBoolean("agua")
         val sobremesa = i.extras?.getBoolean("sobremesa")
         val cafe = i.extras?.getBoolean("cafe")
+
+        var message = ""
+        if(entradas == true)  message += "\n 1 entrada"
+        if(prato_carne == true)  message += "\n 1 prato de carne"
+        if(prato_peixe == true)  message += "\n 1 prato de peixe"
+        if(prato_vegetariano == true)  message += "\n 1 prato vegetariano"
+        if(vinho == true)  message += "\n 1 garrafa de vinho"
+        if(refrigerante == true)  message += "\n 1 garrafa de refrigerante"
+        if(agua == true)  message += "\n 1 garrafa de água"
+        if(sobremesa == true)  message += "\n 1 sobremesa"
+        if(cafe == true)  message += "\n 1 café"
+
+        binding.textPedido.text = message
     }
 }

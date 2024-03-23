@@ -16,15 +16,15 @@ class MainActivity : AppCompatActivity() {
 
         binding.buttonPedido.setOnClickListener {
 
-            val entradas = binding.checkboxEntradas.isActivated
-            val prato_carne = binding.checkboxPratoCarne.isActivated
-            val prato_peixe = binding.checkboxPratoPeixe.isActivated
-            val prato_vegetariano = binding.checkboxPratoVegetariano.isActivated
-            val vinho = binding.checkboxVinho.isActivated
-            val refrigerante = binding.checkboxRefrigerante.isActivated
-            val agua = binding.checkboxAgua.isActivated
-            val sobremesa = binding.checkboxSobremesa.isActivated
-            val cafe = binding.checkboxCafe.isActivated
+            val entradas = binding.checkboxEntradas.isChecked
+            val prato_carne = binding.checkboxPratoCarne.isChecked
+            val prato_peixe = binding.checkboxPratoPeixe.isChecked
+            val prato_vegetariano = binding.checkboxPratoVegetariano.isChecked
+            val vinho = binding.checkboxVinho.isChecked
+            val refrigerante = binding.checkboxRefrigerante.isChecked
+            val agua = binding.checkboxAgua.isChecked
+            val sobremesa = binding.checkboxSobremesa.isChecked
+            val cafe = binding.checkboxCafe.isChecked
 
             val i: Intent = Intent(this, SplashScreenPedidoActivity::class.java)
             i.putExtra("entradas",entradas)
