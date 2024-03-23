@@ -18,60 +18,465 @@
         android:gravity="center"
         android:text="Nome de Restaurante"
         android:textSize="23sp"/>
-    
-    <CheckBox
-        android:id="@+id/checkbox_entradas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Entradas"/>
-    
-    <CheckBox
-        android:id="@+id/checkbox_prato_carne"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Prato de carne"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_prato_peixe"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Prato de peixe"/>
+    <!-- Campo das entradas -->
 
-    <CheckBox
-        android:id="@+id/checkbox_prato_vegetariano"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Prato vegetariano"/>
+        android:layout_margin="5dp">
 
-    <CheckBox
-        android:id="@+id/checkbox_vinho"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Vinho"/>
+        <ImageView
+            android:src="@drawable/entradas"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_refrigerante"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Refrigerante"/>
+        <CheckBox
+            android:id="@+id/checkbox_entradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entradas"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_agua"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Água"/>
+        <TextView
+            android:id="@+id/text_entradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
 
-    <CheckBox
-        android:id="@+id/checkbox_sobremesa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sobremesa"/>
 
-    <CheckBox
-        android:id="@+id/checkbox_cafe"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_entradas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+        <EditText
+            android:id="@+id/edit_qtd_entradas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo das entradas -->
+
+    <!-- Inicio do campo do Prato de carne -->
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Café"/>
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/prato_carne"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_prato_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prato de carne"/>
+
+        <TextView
+            android:id="@+id/text_prato_carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_prato_carne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_prato_carne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Prato de Carne -->
+
+    <!-- Inicio do campo Prato de Peixe -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/prato_peixe"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_prato_peixe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prato de peixe"/>
+
+        <TextView
+            android:id="@+id/text_prato_peixe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_prato_peixe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_prato_peixe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Prato de Peixe -->
+
+    <!-- Inicio do campo Prato Vegetariano -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/prato_vegetariano"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_prato_vegetariano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prato vegetariano"/>
+
+        <TextView
+            android:id="@+id/text_prato_vegetariano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_prato_vegetariano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_prato_vegetariano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Prato Vegetariano -->
+
+    <!-- Inicio do campo Vinho -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/vinho"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_vinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinho"/>
+
+        <TextView
+            android:id="@+id/text_vinho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_vinho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_vinho"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim de campo Vinho -->
+
+    <!-- Inicio do campo Refrigerante -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/refrigerante"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_refrigerante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refrigerante"/>
+
+        <TextView
+            android:id="@+id/text_refrigerante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_refrigerante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_refrigerante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Refrigerante -->
+
+    <!-- Inicio de campo de Agua -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/agua"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Água"/>
+
+        <TextView
+            android:id="@+id/text_agua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_agua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_agua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Agua -->
+
+    <!-- Inicio do campo Sobremesa -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/sobremesa"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_sobremesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sobremesa"/>
+
+        <TextView
+            android:id="@+id/text_sobremesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_sobremesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_sobremesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <!-- Fim do campo Sobremesa -->
+
+    <!-- Inicio do campo Café -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:src="@drawable/cafe"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café"/>
+
+        <TextView
+            android:id="@+id/text_cafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+            <TextView
+                android:id="@+id/text_preco_unitario_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="25dp"
+                android:text="Preco unitario"
+                />
+
+
+            <EditText
+                android:id="@+id/edit_qtd_cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Fim do campo Café -->
+
     
     <Button
         android:id="@+id/button_pedido"
