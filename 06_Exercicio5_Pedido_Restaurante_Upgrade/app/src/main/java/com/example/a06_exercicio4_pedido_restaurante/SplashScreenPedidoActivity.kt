@@ -28,6 +28,7 @@ class SplashScreenPedidoActivity : AppCompatActivity() {
         val sobremesa = i.extras?.getBoolean("sobremesa")
         val cafe = i.extras?.getBoolean("cafe")
 
+
         Handler(Looper.getMainLooper()).postDelayed({
             val i: Intent = Intent(this, PedidoActivity::class.java)
             i.putExtra("entradas",entradas)
@@ -39,6 +40,7 @@ class SplashScreenPedidoActivity : AppCompatActivity() {
             i.putExtra("agua", agua)
             i.putExtra("sobremesa", sobremesa)
             i.putExtra("cafe", cafe)
+
             startActivity(i)
             finish()
         },4000)

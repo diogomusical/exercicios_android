@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center">
-    
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -37,13 +37,6 @@
             android:layout_height="wrap_content"
             android:text="Entradas"/>
 
-        <TextView
-            android:id="@+id/text_entradas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            />
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,19 +44,18 @@
             android:gravity="end">
 
             <TextView
-                android:id="@+id/text_preco_unitario_entradas"
+                android:id="@+id/text_preco_entradas"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
+                android:text="10.00 / unid." />
 
 
-        <EditText
-            android:id="@+id/edit_qtd_entradas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="qtd"/>
+            <EditText
+                android:id="@+id/edit_qtd_entradas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="qtd"/>
 
         </LinearLayout>
 
@@ -89,12 +81,6 @@
             android:layout_height="wrap_content"
             android:text="Prato de carne"/>
 
-        <TextView
-            android:id="@+id/text_prato_carne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -102,12 +88,11 @@
             android:gravity="end">
 
             <TextView
-                android:id="@+id/text_preco_unitario_prato_carne"
+                android:id="@+id/text_preco_prato_carne"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
+                android:text="9.00 / unid." />
 
 
             <EditText
@@ -140,35 +125,6 @@
             android:layout_height="wrap_content"
             android:text="Prato de peixe"/>
 
-        <TextView
-            android:id="@+id/text_prato_peixe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_prato_peixe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_prato_peixe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
-
     </LinearLayout>
 
     <!-- Fim do campo Prato de Peixe -->
@@ -190,35 +146,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Prato vegetariano"/>
-
-        <TextView
-            android:id="@+id/text_prato_vegetariano"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_prato_vegetariano"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_prato_vegetariano"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -242,35 +169,6 @@
             android:layout_height="wrap_content"
             android:text="Vinho"/>
 
-        <TextView
-            android:id="@+id/text_vinho"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_vinho"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_vinho"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
-
     </LinearLayout>
 
     <!-- Fim de campo Vinho -->
@@ -293,34 +191,6 @@
             android:layout_height="wrap_content"
             android:text="Refrigerante"/>
 
-        <TextView
-            android:id="@+id/text_refrigerante"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_refrigerante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_refrigerante"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -343,35 +213,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Água"/>
-
-        <TextView
-            android:id="@+id/text_agua"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_agua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_agua"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -400,29 +241,6 @@
             android:layout_height="wrap_content"
             />
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_sobremesa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_sobremesa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
-
     </LinearLayout>
     <!-- Fim do campo Sobremesa -->
 
@@ -444,40 +262,12 @@
             android:layout_height="wrap_content"
             android:text="Café"/>
 
-        <TextView
-            android:id="@+id/text_cafe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="end">
-
-            <TextView
-                android:id="@+id/text_preco_unitario_cafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="25dp"
-                android:text="Preco unitario"
-                />
-
-
-            <EditText
-                android:id="@+id/edit_qtd_cafe"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="qtd"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 
     <!-- Fim do campo Café -->
 
-    
+
     <Button
         android:id="@+id/button_pedido"
         android:layout_margin="30dp"
@@ -485,6 +275,6 @@
         android:layout_height="wrap_content"
         android:text="Efectuar Pedido"
         />
-    
+
 
 </LinearLayout>

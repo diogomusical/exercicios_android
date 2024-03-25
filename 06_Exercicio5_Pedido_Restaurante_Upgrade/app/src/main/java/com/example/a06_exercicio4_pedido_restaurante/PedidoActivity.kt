@@ -26,6 +26,7 @@ class PedidoActivity : AppCompatActivity() {
         val cafe = i.extras?.getBoolean("cafe")
 
         var message = ""
+
         if(entradas == true)  message += "\n 1 entrada"
         if(prato_carne == true)  message += "\n 1 prato de carne"
         if(prato_peixe == true)  message += "\n 1 prato de peixe"
