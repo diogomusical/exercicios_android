@@ -28,7 +28,7 @@
         android:layout_marginBottom="27dp"
         android:ems="10"
         android:hint="Insira o valor em Euros"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/button_converter"
         app:layout_constraintStart_toStartOf="@+id/button_converter"
         app:layout_constraintTop_toTopOf="parent" />
